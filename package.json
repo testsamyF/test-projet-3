@@ -13,6 +13,7 @@
   },
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Samy-Fichel/FichelSamy_03_10032021/issues"
   },
