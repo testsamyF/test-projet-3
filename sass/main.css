@@ -3,10 +3,12 @@
 body, html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header {
-  background-color: #fff;
+  background-color: #ffff;
 }
 
 .header h1 {
@@ -44,56 +46,79 @@ body, html {
   text-align: center;
 }
 
-.title {
+.box-parent-title-button .title {
   font-weight: 700;
   font-size: 27px;
 }
 
-p {
+.box-parent-title-button p {
   font-size: 1.1em;
   margin-top: -5px;
 }
 
-button {
+.box-parent-title-button button {
   border-radius: 25px;
   border: none;
-  color: #fff;
+  color: #ffff;
   font-size: 16px;
   font-weight: 600;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
   background-color: #FF79DA;
   height: 50px;
-  width: 230px;
+  width: 75%;
   margin-top: 15px;
   margin-bottom: 25px;
   -webkit-box-shadow: 2px 2px 4px grey;
           box-shadow: 2px 2px 4px grey;
   cursor: pointer;
+  max-width: 250px;
 }
 
+/*block Operations*/
 .title-operation {
   margin: 0.8em;
   margin-top: 2em;
 }
 
+.container-operation {
+  padding: 17px;
+}
+
 ol {
   counter-reset: operating;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card-operation {
   background-color: #f6f6f6;
   padding: 25px;
-  margin-left: -13px;
-  margin-bottom: 20px;
+  padding-right: inherit;
   border-radius: 20px;
-  width: 17.5em;
-  height: 20px;
+  width: 100%;
+  height: 70px;
   -webkit-box-shadow: 1px 1px 4px grey;
           box-shadow: 1px 1px 4px grey;
   counter-increment: operating;
   list-style-type: none;
+  max-width: 400px;
+  margin: 20px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.card-operation:before {
+.card-operation.card-operation:hover {
+  background-color: #ffbceb;
+}
+
+.card-operation.card-operation:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,10 +129,10 @@ ol {
       -ms-flex-align: center;
           align-items: center;
   content: counter(operating);
-  background: #9356dc;
-  color: #fff;
+  background: #9356DC;
+  color: #ffff;
   padding: 6px;
-  width: 12px;
+  width: 4%;
   height: 12px;
   margin: 0px 15px -22px -35px;
   font-size: 11px;
@@ -115,16 +140,21 @@ ol {
   text-align: center;
 }
 
-.icon-operating {
+.card-operation .fas:hover {
+  color: #9356DC;
+}
+
+.card-operation .icon-operating {
   color: #7e7e7e;
   padding-left: 13px;
   font-size: 18px;
 }
 
-.operating-text {
-  padding: 10px;
+.card-operation .operating-text {
+  padding: 15px;
 }
 
+/*block Operations*/
 /*block Restaurants*/
 .block-restaurants {
   background-color: #f6f6f6;
@@ -133,7 +163,7 @@ ol {
 
 .title-restaurants {
   margin: 0.8em;
-  margin-top: 2em;
+  margin-top: 1.5em;
   padding-top: 50px;
 }
 
@@ -141,86 +171,140 @@ ol {
   color: black;
 }
 
-.card {
-  background-color: #ffffff;
-  margin: 12px 10px 12px 12px;
+.container-restaurants .card {
+  background-color: #ffff;
   padding-bottom: 30px;
   width: 93%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  max-width: 90%;
 }
 
-.text-href-card {
+.container-restaurants .text-href-card {
   text-decoration: none;
 }
 
-.img-card {
-  width: 100%;
-  height: 13rem;
+.container-restaurants .background-img {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  position: relative;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  -o-object-fit: cover;
-  object-fit: cover;
 }
 
-h3 {
+.container-restaurants .background-img.background-img-2 {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.container-restaurants .background-img.background-img-3 {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.container-restaurants .background-img.background-img-4 {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.container-restaurants .nouveau {
+  background-color: #99E2D0;
+  color: #1b6150;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  padding: 9px 10px 9px 10px;
+  border-radius: 2px;
+  font-weight: 400;
+}
+
+.container-restaurants .box-texts {
+  line-height: 10px;
+}
+
+.container-restaurants .box-texts h3 {
   padding-left: 20px;
   color: black;
   font-weight: 600;
   line-height: 10px;
 }
 
-.box-texts {
-  line-height: 10px;
-}
-
-.text-card {
+.container-restaurants .box-texts .text-card {
   padding-left: 20px;
   color: black;
   font-weight: 300;
   font-size: 18px;
 }
 
-.heart {
+.container-restaurants .box-texts .heart {
   font-size: 1.8em;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 9em;
+  margin-right: 1em;
   margin-top: -40px;
 }
 
+/* end block-restaurants*/
 /* footer*/
 .container-footer {
   background-color: #353535;
   padding: 20px 0;
 }
 
-.logo-footer {
+.container-footer .logo-footer {
   font-family: 'Shrikhand';
-  color: #fff;
+  color: #ffff;
   margin: 40px;
 }
 
-.list-footer {
+.container-footer .list-footer {
   list-style-type: none;
   line-height: 1.5em;
 }
 
-.link-footer {
+.container-footer .link-footer {
   text-decoration: none;
-  color: #fff;
+  color: #ffff;
 }
 
-.icon-footer {
-  width: 25px;
+.container-footer .icon-footer {
+  width: 1em;
+  padding-right: 15px;
+}
+
+/*menu*/
+.menu-page .container-footer {
+  background-color: red;
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 1250px) {
+  ol {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /*block Restaurants*/
+  .container-restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container-restaurants .card {
+    max-width: 45%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

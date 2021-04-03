@@ -1,0 +1,14 @@
+@media screen  and  (min-width: 1250px)
+{
+    ol{
+        flex-direction: row;
+    }
+    /*block Restaurants*/
+    .container-restaurants{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-restaurants .card{
+        max-width: 45%;
+    }
+}

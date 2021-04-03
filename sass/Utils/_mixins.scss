@@ -1,0 +1,21 @@
+@mixin logo{          
+    color: $logo-color;
+    font-family: 'Shrikhand';
+    text-align: center;        
+} 
+@mixin button{
+    border-radius: 25px;
+    border: none;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient($secondary-color, $primary-color);
+    background-color: $secondary-color;
+    height: 50px;
+    width: 75%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 4px grey;
+    cursor: pointer;
+    max-width:250px;
+}  
