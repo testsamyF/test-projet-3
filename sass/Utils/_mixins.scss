@@ -1,5 +1,5 @@
 @mixin logo{          
-    color: $logo-color;
+    color: $color-black;
     font-family: 'Shrikhand';
     text-align: center;        
 } 
@@ -9,7 +9,7 @@
     color: $color-white;
     font-size: 16px;
     font-weight: 600;
-    background: linear-gradient($secondary-color, $primary-color);
+    background: linear-gradient(0.5deg, $primary-color, $secondary-color);
     background-color: $secondary-color;
     height: 50px;
     width: 75%;

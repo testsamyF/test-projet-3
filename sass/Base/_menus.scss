@@ -1,8 +1,99 @@
-/*menu*/
+/*menu-ohmyfood*/
 .menu-page{
 
-    .container-footer{
-        background-color: red;
-        padding: 20px 0;
+    .logo{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .icon-logo{
+        color: black;
+        font-weight: bolder;
+        font-size: 1.3em;
       }
+      
+      .title-logo{
+        margin-right: 25px;
+      }
+    }
+    
+    .background-img{
+      background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 240px;
+      width: 100%;
+      max-width: 100%;
+    }
+    .parent-background{
+      background-color: #f6f6f6;
+      margin-top: -45px;
+      padding-top: 4px;
+      border-top-left-radius: 45px;
+      border-top-right-radius: 45px;
+      padding-left: 20px;
+    }
+    .title-parent{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .title-menu{
+      font-family: 'Shrikhand';
+      font-weight: 100;
+      font-size: 1.6em;
+      margin-left: -46px;
+    }
+    .heart{
+      font-size: 1.5em;
+    }
+    .child-block{
+      padding: 1px;
+    }
+    .title-card{
+      font-weight: normal;
+      font-size: medium;
+      text-transform: uppercase;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .title-card:after{
+      content: " ";
+      width: 11%;
+      height: 4px;
+      background-color: $tertiary-color;
+      left: 0;
+      bottom: -8px;
+      position: absolute;
+    }
+    
+    .href-card-menu{
+      text-decoration: none;
+    }
+    .card_menu{
+      background-color: $color-white;
+      color: $color-black;
+      box-sizing: border-box;
+      font-weight: 500;
+      max-width: 100%;
+      height: 65px;
+      padding: 1px 9px;
+      margin: 0 10px 15px -8px;
+      border-radius: 12px;
+    }
+    h4{
+      line-height: 0;
+    }
+    .paragraph-card{
+      font-weight: normal;
+      line-height: 0;
+      font-size: 13.2px;
+    }
+    .price{
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20px;
+      margin-top: -24px;
+    }
 }
+ 
