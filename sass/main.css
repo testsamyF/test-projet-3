@@ -77,6 +77,11 @@ body, html {
 }
 
 /*block Operations*/
+.block-operation {
+  max-width: 1400px;
+  margin: auto;
+}
+
 .title-operation {
   margin: 0.8em;
   margin-top: 2em;
@@ -160,6 +165,8 @@ ol {
 .block-restaurants {
   background-color: #f6f6f6;
   padding-bottom: 1px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .title-restaurants {
@@ -179,9 +186,7 @@ ol {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 20px;
-  max-width: 700px;
   margin: 40px auto;
-  max-width: 90%;
 }
 
 .container-restaurants .text-href-card {
@@ -276,6 +281,7 @@ ol {
 .container-footer .link-footer {
   text-decoration: none;
   color: #ffff;
+  font-style: normal;
 }
 
 .container-footer .icon-footer {
@@ -285,43 +291,39 @@ ol {
 
 /*menu-ohmyfood*/
 .menu-page .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  float: left;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 
-.menu-page .logo .icon-logo {
+.menu-page .icon-logo {
   color: black;
   font-weight: bolder;
   font-size: 1.3em;
-}
-
-.menu-page .logo .title-logo {
-  margin-right: 25px;
 }
 
 .menu-page .background-img {
   background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  height: 240px;
+  height: 245px;
   width: 100%;
   max-width: 100%;
+  margin-top: -1em;
+}
+
+.menu-page .menus {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
 }
 
 .menu-page .parent-background {
   background-color: #f6f6f6;
   margin-top: -45px;
-  padding-top: 4px;
+  padding: 4px 0 0 20px;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
-  padding-left: 20px;
 }
 
 .menu-page .title-parent {
@@ -331,31 +333,34 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu-page .title-menu {
   font-family: 'Shrikhand';
   font-weight: 100;
   font-size: 1.6em;
-  margin-left: -46px;
 }
 
 .menu-page .heart {
   font-size: 1.5em;
+  padding-right: 30px;
 }
 
 .menu-page .child-block {
-  padding: 1px;
+  padding: 3px;
 }
 
 .menu-page .title-card {
-  font-weight: normal;
+  font-weight: 300;
   font-size: medium;
   text-transform: uppercase;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  width: 100%;
+  max-width: 370px;
 }
 
 .menu-page .title-card:after {
@@ -368,11 +373,18 @@ ol {
   position: absolute;
 }
 
+.menu-page .box-card {
+  padding-bottom: 5px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
 .menu-page .href-card-menu {
   text-decoration: none;
 }
 
-.menu-page .card_menu {
+.card_menu {
   background-color: #ffff;
   color: black;
   -webkit-box-sizing: border-box;
@@ -383,27 +395,52 @@ ol {
   padding: 1px 9px;
   margin: 0 10px 15px -8px;
   border-radius: 12px;
+  -webkit-box-shadow: 0px 1px 10px 1px RGB(5 0 0/12%);
+          box-shadow: 0px 1px 10px 1px RGB(5 0 0/12%);
 }
 
-.menu-page h4 {
+h4 {
   line-height: 0;
+  font-weight: 500;
+  font-size: 1.1em;
 }
 
-.menu-page .paragraph-card {
+.paragraph-card {
   font-weight: normal;
   line-height: 0;
   font-size: 13.2px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
-.menu-page .price {
+.price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-right: 20px;
-  margin-top: -24px;
+  margin: -24px 20px 16px 0;
+}
+
+button {
+  border-radius: 25px;
+  border: none;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(0.5deg, #9356DC, #FF79DA);
+  background-color: #FF79DA;
+  height: 50px;
+  width: 75%;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 2px 2px 4px grey;
+          box-shadow: 2px 2px 4px grey;
+  cursor: pointer;
+  max-width: 250px;
+  width: 57%;
+  margin: 30px 0 80px 55px;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 1250px) {
@@ -424,5 +461,18 @@ ol {
   .container-restaurants .card {
     max-width: 45%;
   }
+  /*menu-page*/
+  .menu-page .box-card {
+    margin: 0 10px;
+  }
+  .menu-page .child-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /*menu-page*/
 }
 /*# sourceMappingURL=main.css.map */

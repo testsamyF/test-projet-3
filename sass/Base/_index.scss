@@ -22,7 +22,7 @@ body, html{
   position: relative;
   bottom: 1em;
 }
-.city-map{
+.city-map{  
   margin-left: 1em;
   margin-right: 1em;
 }
@@ -47,6 +47,10 @@ body, html{
   
 }
 /*block Operations*/
+.block-operation{
+  max-width: 1400px;
+  margin: auto;
+}
 .title-operation{
   margin: 0.8em;
   margin-top: 2em;
@@ -113,6 +117,8 @@ ol{
 {
   background-color: #f6f6f6;
   padding-bottom: 1px;
+  max-width: 1400px;
+  margin: auto;
 }
 .title-restaurants{
   margin: 0.8em;
@@ -128,9 +134,7 @@ ol{
     width: 93%;
     box-sizing: border-box;
     border-radius: 20px; 
-    max-width: 700px;
     margin: 40px auto;
-    max-width: 90%;
   }
   .text-href-card{
     text-decoration: none;
@@ -210,6 +214,7 @@ ol{
   .link-footer{
     text-decoration: none;
     color: $color-white;
+    font-style: normal;
   }
   .icon-footer{
     width: 1em;

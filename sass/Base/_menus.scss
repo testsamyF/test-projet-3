@@ -2,60 +2,61 @@
 .menu-page{
 
     .logo{
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-
+      float: left;
+      padding-left: 30px;
+      padding-top: 10px;  
+    }
       .icon-logo{
         color: black;
         font-weight: bolder;
-        font-size: 1.3em;
-      }
-      
-      .title-logo{
-        margin-right: 25px;
-      }
+        font-size: 1.3em;    
     }
-    
     .background-img{
       background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
       background-size: cover;
       background-position: center;
-      height: 240px;
+      height: 245px;
       width: 100%;
       max-width: 100%;
+      margin-top: -1em;
+    }
+    .menus{
+      max-width: 1400px;
+      width: 100%;
+      margin: auto;
     }
     .parent-background{
       background-color: #f6f6f6;
       margin-top: -45px;
-      padding-top: 4px;
+      padding: 4px 0 0 20px;
       border-top-left-radius: 45px;
-      border-top-right-radius: 45px;
-      padding-left: 20px;
+      border-top-right-radius: 45px; 
     }
     .title-parent{
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
     }
     .title-menu{
       font-family: 'Shrikhand';
       font-weight: 100;
       font-size: 1.6em;
-      margin-left: -46px;
     }
     .heart{
       font-size: 1.5em;
+      padding-right: 30px;
     }
     .child-block{
-      padding: 1px;
+      padding: 3px;
     }
     .title-card{
-      font-weight: normal;
+      font-weight: 300;
       font-size: medium;
       text-transform: uppercase;
       position: relative;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      width: 100%;
+      max-width: 370px;
     }
     .title-card:after{
       content: " ";
@@ -66,9 +67,15 @@
       bottom: -8px;
       position: absolute;
     }
-    
+    .box-card{
+      padding-bottom: 5px;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+    }
     .href-card-menu{
       text-decoration: none;
+  }
     }
     .card_menu{
       background-color: $color-white;
@@ -80,20 +87,27 @@
       padding: 1px 9px;
       margin: 0 10px 15px -8px;
       border-radius: 12px;
+      box-shadow: 0px 1px 10px 1px RGB(5 0 0/12%);
     }
     h4{
       line-height: 0;
+      font-weight: 500;
+      font-size: 1.1em;
     }
     .paragraph-card{
       font-weight: normal;
       line-height: 0;
       font-size: 13.2px;
+      color: rgba(0,0,0,0.7);
     }
     .price{
       display: flex;
       justify-content: flex-end;
-      margin-right: 20px;
-      margin-top: -24px;
+      margin: -24px 20px 16px 0;
     }
-}
- 
+    button{
+      @include button;
+      width: 57%;
+      margin: 30px 0 80px 55px;
+      font-weight: 500;
+    }

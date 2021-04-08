@@ -11,5 +11,11 @@
     .container-restaurants .card{
         max-width: 45%;
     }
-    
+    /*menu-page*/
+    .menu-page .box-card{ 
+        margin: 0 10px;
+    }
+    .menu-page .child-block{
+        display: flex;
+    }
 }
