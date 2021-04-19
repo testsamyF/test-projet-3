@@ -42,9 +42,31 @@
       font-weight: 100;
       font-size: 1.6em;
     }
+    .box-heart{
+      position: relative;
+      padding-right: 30px;
+      cursor: pointer;
+    }
+    .box-heart:hover{
+      .heart-full{
+       font-size: 1.5em;
+        opacity: 1;
+        left: 0px;
+        top: 0px;
+      } 
+    }
+    .heart-full{
+      font-size: 0px;
+      color: rgba(147, 27, 177, 0.8);
+      font-weight: bold;
+      transition: all 0.5s;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      opacity: 0;
+    }
     .heart{
       font-size: 1.5em;
-      padding-right: 30px;
     }
     .child-block{
       padding: 3px;
@@ -53,10 +75,10 @@
       font-weight: 300;
       font-size: medium;
       text-transform: uppercase;
-      position: relative;
+      position: relative; 
       margin-bottom: 25px;
       width: 100%;
-      max-width: 370px;
+      max-width: 370px; 
     }
     .title-card:after{
       content: " ";
@@ -105,9 +127,13 @@
       justify-content: flex-end;
       margin: -24px 20px 16px 0;
     }
+    .button{
+      display: flex;
+      justify-content: center;
+   }
     button{
       @include button;
       width: 57%;
-      margin: 30px 0 80px 55px;
+      margin: 30px 0 80px 0;
       font-weight: 500;
     }

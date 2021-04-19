@@ -11,7 +11,7 @@
     font-weight: 600;
     background: linear-gradient(0.5deg, $primary-color, $secondary-color);
     background-color: $secondary-color;
-    height: 50px;
+    height: 50px; 
     width: 75%;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -19,3 +19,8 @@
     cursor: pointer;
     max-width:250px;
 }  
+@mixin heart{
+    &.fa-heart::before {
+    transition: all color 1s ease; 
+    }
+}

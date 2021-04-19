@@ -184,15 +184,36 @@ ol{
       font-weight: 300;
       font-size: 18px; 
     }
-    .heart{
-      font-size: 1.8em;
-      color: black;
+    .box-heart{
+      padding-right: 30px;
+      cursor: pointer;
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      margin-right: 1em;
-      margin-top: -40px;
-
+      margin-top: -2em;
+      
+    }
+    .box-heart:hover{
+      .heart-full{
+       font-size: 1.5em;
+        opacity: 1;
+        left:15px;
+        top: 0;
+        display: flex;
+        margin-left: -1em;
+      } 
+    }
+    .heart-full{
+      font-size: 0;
+      color: rgba(147, 27, 177, 0.8);
+      font-weight: bold;
+      transition: all 0.5s;
+      position: -webkit-sticky;
+      position: sticky;
+      opacity: 0;
+    }
+    .heart{
+      font-size: 1.5em;
     }
   }
 }

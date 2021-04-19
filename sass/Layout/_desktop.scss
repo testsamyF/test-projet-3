@@ -4,6 +4,9 @@
         flex-direction: row;
     }
     /*block Restaurants*/
+    .block-restaurants{
+        border-radius: 20px;
+    }
     .container-restaurants{
         display: flex;
         flex-wrap: wrap;
@@ -12,6 +15,9 @@
         max-width: 45%;
     }
     /*menu-page*/
+    .menu-page .background-img{
+        height:460px;
+    }
     .menu-page .box-card{ 
         margin: 0 10px;
     }

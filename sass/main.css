@@ -244,9 +244,9 @@ ol {
   font-size: 18px;
 }
 
-.container-restaurants .box-texts .heart {
-  font-size: 1.8em;
-  color: black;
+.container-restaurants .box-texts .box-heart {
+  padding-right: 30px;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,8 +256,33 @@ ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 1em;
-  margin-top: -40px;
+  margin-top: -2em;
+}
+
+.container-restaurants .box-texts .box-heart:hover .heart-full {
+  font-size: 1.5em;
+  opacity: 1;
+  left: 15px;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -1em;
+}
+
+.container-restaurants .box-texts .heart-full {
+  font-size: 0;
+  color: rgba(147, 27, 177, 0.8);
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: -webkit-sticky;
+  position: sticky;
+  opacity: 0;
+}
+
+.container-restaurants .box-texts .heart {
+  font-size: 1.5em;
 }
 
 /* end block-restaurants*/
@@ -344,9 +369,33 @@ ol {
   font-size: 1.6em;
 }
 
+.menu-page .box-heart {
+  position: relative;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.menu-page .box-heart:hover .heart-full {
+  font-size: 1.5em;
+  opacity: 1;
+  left: 0px;
+  top: 0px;
+}
+
+.menu-page .heart-full {
+  font-size: 0px;
+  color: rgba(147, 27, 177, 0.8);
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  opacity: 0;
+}
+
 .menu-page .heart {
   font-size: 1.5em;
-  padding-right: 30px;
 }
 
 .menu-page .child-block {
@@ -422,6 +471,15 @@ h4 {
   margin: -24px 20px 16px 0;
 }
 
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 button {
   border-radius: 25px;
   border: none;
@@ -439,7 +497,7 @@ button {
   cursor: pointer;
   max-width: 250px;
   width: 57%;
-  margin: 30px 0 80px 55px;
+  margin: 30px 0 80px 0;
   font-weight: 500;
 }
 
@@ -451,6 +509,9 @@ button {
             flex-direction: row;
   }
   /*block Restaurants*/
+  .block-restaurants {
+    border-radius: 20px;
+  }
   .container-restaurants {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -462,6 +523,9 @@ button {
     max-width: 45%;
   }
   /*menu-page*/
+  .menu-page .background-img {
+    height: 460px;
+  }
   .menu-page .box-card {
     margin: 0 10px;
   }
