@@ -98,8 +98,31 @@
     .href-card-menu{
       text-decoration: none;
   }
+  @-webkit-keyframes glissement {
+    from {
+      margin-top: -50px;
+      opacity: 0;
+    }
+  
+    to {
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }
+  @keyframes glissement {
+    from {
+      margin-top: -50px;
+      opacity: 0;
+    }
+  
+    to {
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }
     }
     .card_menu{
+      display: flex;
       background-color: $color-white;
       color: $color-black;
       box-sizing: border-box;
@@ -109,11 +132,27 @@
       padding: 1px 9px;
       margin: 0 10px 15px -8px;
       border-radius: 12px;
+      overflow: hidden;
       box-shadow: 0px 1px 10px 1px RGB(5 0 0/12%);
+      -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: glissement;
+            animation-name: glissement;
+    }
+    .card_menu:hover{
+      .box-check{
+        transform: translateX(0);
+        .check-wrap{
+          transform: rotate(360deg);
+        }    
+      }   
+    }
+    .box-info{
+      flex-grow: 1;
     }
     h4{
       line-height: 0;
-      font-weight: 500;
+      font-weight: 500; 
       font-size: 1.1em;
     }
     .paragraph-card{
@@ -127,9 +166,43 @@
       justify-content: flex-end;
       margin: -24px 20px 16px 0;
     }
+    .box-check{
+      transform: translateX(70px); 
+      transition: transform 1s;
+      
+      .check{
+        background-color: $tertiary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4em;
+        margin-right: -0.6em;
+        height: 100%;
+        transition: 0.5s ease-in-out;
+        /*opacity: 0;*/
+        
+      } 
+      .check-wrap{
+        background-color: white;
+        color: $tertiary-color;
+        height: 25px;
+        width: 25px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(0deg);
+        transition: transform 1s;
+        }
+    }
     .button{
       display: flex;
       justify-content: center;
+
+   }
+   .href-button{
+     text-decoration: none;
+     color: $color-white;
    }
     button{
       @include button;

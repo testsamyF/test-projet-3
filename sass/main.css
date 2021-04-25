@@ -433,7 +433,32 @@ ol {
   text-decoration: none;
 }
 
+@-webkit-keyframes glissement {
+  from {
+    margin-top: -50px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes glissement {
+  from {
+    margin-top: -50px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+
 .card_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #ffff;
   color: black;
   -webkit-box-sizing: border-box;
@@ -444,8 +469,29 @@ ol {
   padding: 1px 9px;
   margin: 0 10px 15px -8px;
   border-radius: 12px;
+  overflow: hidden;
   -webkit-box-shadow: 0px 1px 10px 1px RGB(5 0 0/12%);
           box-shadow: 0px 1px 10px 1px RGB(5 0 0/12%);
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-name: glissement;
+  animation-name: glissement;
+}
+
+.card_menu:hover .box-check {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.card_menu:hover .box-check .check-wrap {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.box-info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 h4 {
@@ -471,6 +517,57 @@ h4 {
   margin: -24px 20px 16px 0;
 }
 
+.box-check {
+  -webkit-transform: translateX(70px);
+          transform: translateX(70px);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.box-check .check {
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4em;
+  margin-right: -0.6em;
+  height: 100%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  /*opacity: 0;*/
+}
+
+.box-check .check-wrap {
+  background-color: white;
+  color: #99E2D0;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,6 +575,11 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.href-button {
+  text-decoration: none;
+  color: #ffff;
 }
 
 button {
