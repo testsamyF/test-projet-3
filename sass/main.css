@@ -514,7 +514,8 @@ h4 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: -24px 20px 16px 0;
+  margin-top: 2.2em;
+  margin-right: 2em;
 }
 
 .box-check {
@@ -524,6 +525,9 @@ h4 {
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .box-check .check {

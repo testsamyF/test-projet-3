@@ -164,11 +164,13 @@
     .price{
       display: flex;
       justify-content: flex-end;
-      margin: -24px 20px 16px 0;
+      margin-top: 2.2em;
+      margin-right: 2em;
     }
     .box-check{
       transform: translateX(70px); 
       transition: transform 1s;
+      display: flex;
       
       .check{
         background-color: $tertiary-color;
