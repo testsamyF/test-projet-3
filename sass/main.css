@@ -9,14 +9,10 @@ body, html {
 
 .box-loader {
   visibility: hidden;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
-  -webkit-transition: visibility 2s;
-  transition: visibility 2s;
-  -webkit-animation: box-loader 3s ease-in-out normal forwards;
-  animation: box-loader 3s ease-in-out normal forwards;
+  -webkit-animation: loader 2s;
+  animation: loader 2s;
   text-align: center;
-  background-color: #16a085;
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   z-index: 1000;
   width: 100%;
@@ -31,6 +27,24 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes loader {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
 
 .anim-loader {
@@ -408,13 +422,25 @@ ol {
 }
 
 .menu-page .background-img {
-  background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-size: cover;
   background-position: center;
   height: 245px;
   width: 100%;
   max-width: 100%;
   margin-top: -1em;
+}
+
+.menu-page .background-img.background-img-2 {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.menu-page .background-img.background-img-3 {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.menu-page .background-img.background-img-4 {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .menu-page .menus {
@@ -532,8 +558,6 @@ ol {
   to {
     margin-top: 0px;
     opacity: 1;
-    -webkit-animation-delay: 3s;
-    animation-delay: 1s;
   }
 }
 
@@ -548,14 +572,14 @@ ol {
   font-weight: 500;
   max-width: 100%;
   height: 65px;
-  padding: 1px 9px;
+  padding: 0 9px;
   margin: 0 10px 15px -8px;
   border-radius: 12px;
   overflow: hidden;
   -webkit-box-shadow: 0px 1px 10px 1px RGB(5 0 0/12%);
           box-shadow: 0px 1px 10px 1px RGB(5 0 0/12%);
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-name: glissement;
   animation-name: glissement;
 }
@@ -575,14 +599,20 @@ ol {
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow: hidden;
+}
+
+.ellipsis {
+  width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 h4 {
-  line-height: 0;
   font-weight: 500;
   font-size: 1.1em;
+  margin-bottom: 3px;
+  margin-top: 13px;
 }
 
 .item-title {
@@ -593,10 +623,9 @@ h4 {
 
 .paragraph-card {
   font-weight: normal;
-  line-height: 0;
   font-size: 13.2px;
   color: rgba(0, 0, 0, 0.7);
-  text-overflow: ellipsis;
+  margin-top: 0;
 }
 
 .price {

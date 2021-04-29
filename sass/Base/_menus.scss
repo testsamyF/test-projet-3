@@ -12,13 +12,23 @@
         font-size: 1.3em;    
     }
     .background-img{
-      background-image: url("/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+      background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
       background-size: cover;
       background-position: center;
       height: 245px;
       width: 100%;
       max-width: 100%;
       margin-top: -1em;
+      
+      &.background-img-2{
+        background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+      }
+      &.background-img-3{
+        background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+      }
+      &.background-img-4{
+        background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+      }
     }
     .menus{
       max-width: 1400px;
@@ -118,8 +128,6 @@
     to {
       margin-top: 0px;
       opacity: 1;
-      -webkit-animation-delay: 3s;
-      animation-delay: 1s;
     }
   }
     }
@@ -131,13 +139,13 @@
       font-weight: 500;
       max-width: 100%;
       height: 65px;
-      padding: 1px 9px;
+      padding: 0 9px;
       margin: 0 10px 15px -8px;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0px 1px 10px 1px RGB(5 0 0/12%);
-      -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+      -webkit-animation-duration: 1s;
+            animation-duration: 1s;
     -webkit-animation-name: glissement;
             animation-name: glissement;
     }
@@ -152,13 +160,19 @@
     .box-info{
       flex-grow: 1;
       overflow: hidden;
+    }
+    .ellipsis{
+      width: 100%;
       text-overflow: ellipsis;
       white-space: nowrap;
+      overflow: hidden;
+      
     }
     h4{
-      line-height: 0;
       font-weight: 500; 
       font-size: 1.1em;
+      margin-bottom: 3px;
+      margin-top: 13px;
     }
     .item-title{
       color: black;
@@ -167,10 +181,9 @@
     }
     .paragraph-card{
       font-weight: normal;
-      line-height: 0;
       font-size: 13.2px;
       color: rgba(0,0,0,0.7);
-      text-overflow: ellipsis;
+      margin-top: 0;
     }
     .price{
       display: flex;

@@ -11,167 +11,218 @@
     <!--added browser tab favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="../images/logo/ohmyfood@2x.svg" />
     <!--link to the stylesheet + media_queries-->
-    <link rel="stylesheet" href="" media="screen" />
-    <link rel="stylesheet" href="" media="screen" />
+    <link rel="stylesheet" href="/sass/main.css" media="screen" /> 
+    <link rel="stylesheet" href="/sass/Base/_index.scss" media="screen" />
 </head>
-
-<body>
-    <header>
+<body class="menu-page">
+    <header> 
         <div class="header">
-            <div class="logo">
-                <a href="../index.html">
-                    <i class="fas fa-arrow-left"></i>
+            <div>
+                <a href="../index.html" class="logo" >
+                    <i class="fas fa-arrow-left icon-logo"></i>
                 </a>
-                <h1 class="">ohmyfood</h1>
+                <h1 class="title-logo">ohmyfood</h1>
             </div>
         </div>
     </header>
     <main>
-        <section class="">
-            <div class="">
-                <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="img à la française" />
-            </div>
-        </section>
-        <section class="">
+        <div class="background-img background-img-4"></div>
+        <section class="menus">
             <div class="parent-background">
                 <div class="title-parent">
-                    <h2>À la française</h2>
-                    <i class="fal fa-heart"></i>
+                    <h2 class="title-menu">Le délice des sens</h2>
+                    <div class="box-heart">
+                        <i class="far fa-heart heart"></i> 
+                        <i class="far fa-heart heart-full"></i>
+                    </div>  
                 </div>
                 <div class="child-block">
-                    <div class="title-menu">
-                        <h3>Entrées</h3>
-                    </div>
-                    <div class="card_menu">
-                        <a href="#">
-                            <div class="">
-                                <h4 class="text_card_menu">Tartare de poulpe acidulé</h4>
-                                <p class="">Aux zestes d'orange</p>
-                                <p>25<strong>€</strong></p>
-                            <div class="check-icon">
-                                <i class="menuItem__icon fas fa-check"></i>
-                            </div>
+                    <div class="box-card">
+                        <div>
+                            <h3 class="title-card">Entrées</h3>
+                        </div>
+                        <a href="#" class="href-card-menu">
+                            <div class="card_menu">
+                                <div class="box-info">
+                                    <h4 class="ellipsis">Tartare de thon</h4> 
+                                    <p class="paragraph-card ellipsis" >Assaisonné au yuzu</p>
+                                </div>
+                                <div class="box-check">
+                                    <p class="price">25<strong>€</strong></p>
+                                    <div class="check">
+                                        <div class="check-wrap">
+                                            <i class="fa-check fas check-icon"></i>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div> 
                         </a>
-                    </div>
-                    <div class="card_menu">
-                        <a href="#">
-                            <div class="">
-                                <h4 class="text_card_menu">Velouté de légumes d'antan</h4>
-                                <p class="">Carotte, panais, topinambour</p>
-                                <p>35<strong>€</strong></p>
-                            <div class="check-icon">
-                                <i class="menuItem__icon fas fa-check"></i>
+                        <a href="#" class="href-card-menu">
+                            <div class="card_menu">
+                                <div class="box-info">
+                                    <h4 class="ellipsis">Bouchée de homard croustillant</h4>
+                                    <p class="paragraph-card ellipsis">Et sa farandole de petits légumes</p>
+                                </div>
+                                <div class="box-check">
+                                    <p class="price">35<strong>€</strong></p>
+                                    <div class="check">
+                                        <div class="check-wrap">
+                                            <i class="fa-check fas check-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </a>        
-                    </div>
-                    <div class="card_menu">
-                        <a href="#">
-                            <div class="">
-                                <h4 class="text_card_menu">Soupe à l'oignon</h4>
-                                <p class="">Revisitée</p>
-                                <p>20<strong>€</strong></p>
-                            <div class="check-icon">
-                                <i class="menuItem__icon fas fa-check"></i>
+                        <a href="#" class="href-card-menu">
+                            <div class="card_menu">
+                                <div class="box-info">
+                                    <h4 class="ellipsis">Velouté de cèpes</h4>
+                                    <p class="paragraph-card ellipsis">Aux truffes</p>  
+                                </div>
+                                <div class="box-check">
+                                    <p class="price">20<strong>€</strong></p>
+                                    <div class="check">
+                                        <div class="check-wrap">
+                                            <i class="fa-check fas check-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>       
+                    <div class="box-card">
+                        <div class="title-card-menu">
+                            <h3 class="title-card">Plats</h3>
+                        </div>
+                        <a href="#" class="href-card-menu">
+                            <div class="card_menu">
+                                <div class="box-info">
+                                    <h4 class="ellipsis">Poulet rôti aux herbes de Provence </h4>
+                                    <p class="paragraph-card ellipsis">Et sa crème de truffe</p>
+                                </div>
+                                <div class="box-check">
+                                    <p class="price">40<strong>€</strong></p>
+                                    <div class="check">
+                                        <div class="check-wrap">
+                                            <i class="fa-check fas check-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="href-card-menu">
+                            <div class="card_menu">
+                                <div class="box-info">
+                                    <h4 class="ellipsis">Langouste rôtie</h4>
+                                    <p class="paragraph-card ellipsis">Et ses légumes de saison</p>
+                                </div>
+                                <div class="box-check">
+                                    <p class="price">35<strong>€</strong></p>
+                                    <div class="check">
+                                        <div class="check-wrap">
+                                            <i class="fa-check fas check-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>        
+                        <a href="#" class="href-card-menu">
+                            <div class="card_menu">
+                                <div class="box-info">
+                                    <h4 class="ellipsis">Côte de boeuf Angus</h4>
+                                    <p class="paragraph-card ellipsis">Et sa purée de panais</p>
+                                </div>
+                                <div class="box-check">
+                                    <p class="price">44<strong>€</strong></p>
+                                    <div class="check">
+                                        <div class="check-wrap">
+                                            <i class="fa-check fas check-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </a>       
                     </div>
-                    <div class="title-menu">
-                        <h3>Plats</h3>
-                    </div>
-                    <div class="card_menu">
-                        <a href="#">
-                            <div class="">
-                                <h4 class="text_card_menu">Coquilles Saint-Jacques</h4>
-                                <p class="">Accompagnées d'une purée de panais</p>
-                                <p>40<strong>€</strong></p>
-                            <div class="check-icon">
-                                <i class="menuItem__icon fas fa-check"></i>
+                    <div class="box-card">
+                        <div class="title-card-menu">
+                            <h3 class="title-card">Desserts</h3>
+                        </div>
+                        <a href="#" class="href-card-menu">
+                            <div class="card_menu">
+                                <div class="box-info">
+                                    <h4 class="ellipsis">Farandole de desserts</h4>
+                                    <p class="paragraph-card ellipsis">Du chef</p>
+                                </div>
+                                <div class="box-check">
+                                    <p class="price">18<strong>€</strong></p>
+                                    <div class="check">
+                                        <div class="check-wrap">
+                                            <i class="fa-check fas check-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </a>
-                    </div>
-                    <div class="card_menu">
-                        <a href="#">
-                            <div class="">
-                                <h4 class="text_card_menu">Magret de canard</h4>
-                                <p class="">Et parmentier de pommes de terre</p>
-                                <p>35<strong>€</strong></p>
-                            <div class="check-icon">
-                                <i class="menuItem__icon fas fa-check"></i>
+                        <a href="#" class="href-card-menu">
+                            <div class="card_menu">
+                                <div class="box-info">
+                                    <h4 class="ellipsis">Crème brulée</h4>
+                                    <p class="paragraph-card ellipsis">Revisité</p>
+                                </div>
+                                <div class="box-check">
+                                    <p class="price">22<strong>€</strong></p>
+                                    <div class="check">
+                                        <div class="check-wrap">
+                                            <i class="fa-check fas check-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </a>        
-                    </div>
-                    <div class="card_menu">
-                        <a href="#">
-                            <div class="">
-                                <h4 class="text_card_menu">Pigeonneau d’Ille-et-Vilaine</h4>
-                                <p class="">Sur son lit de gnocchis aux légumes</p>
-                                <p>44<strong>€</strong></p>
-                            <div class="check-icon">
-                                <i class="menuItem__icon fas fa-check"></i>
+                        <a href="#" class="href-card-menu">
+                            <div class="card_menu">
+                                <div class="box-info">
+                                    <h4 class="ellipsis">Tiramisu</h4>
+                                    <p class="paragraph-card ellipsis">À la noisette</p>
+                                </div>
+                                <div class="box-check">
+                                    <p class="price">23<strong>€</strong></p>
+                                    <div class="check">
+                                        <div class="check-wrap">
+                                            <i class="fa-check fas check-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </a>       
                     </div>
-                    <div class="title-menu">
-                        <h3>Desserts</h3>
-                    </div>
-                    <div class="card_menu">
-                        <a href="#">
-                            <div class="">
-                                <h4 class="text_card_menu">Pétales de violettes glacés</h4>
-                                <p class="">Et purée de noisettes</p>
-                                <p>18<strong>€</strong></p>
-                            <div class="check-icon">
-                                <i class="menuItem__icon fas fa-check"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card_menu">
-                        <a href="#">
-                            <div class="">
-                                <h4 class="text_card_menu">Fondant au chocolat</h4>
-                                <p class="">Revisité</p>
-                                <p>22<strong>€</strong></p>
-                            <div class="check-icon">
-                                <i class="menuItem__icon fas fa-check"></i>
-                            </div>
-                        </a>        
-                    </div>
-                    <div class="card_menu">
-                        <a href="#">
-                            <div class="">
-                                <h4 class="text_card_menu">Millefeuille croustillant</h4>
-                                <p class="">Myrtilles et pâte d’amande</p>
-                                <p>23<strong>€</strong></p>
-                            <div class="check-icon">
-                                <i class="menuItem__icon fas fa-check"></i>
-                            </div>
-                        </a>       
-                    </div>
-                    <div class="button">
-                        <button>Commander</button>
-                    </div>
+                </div>
+                <div class="button">
+                    <button>
+                        <a href="/index.html" class="href-button">Commander</a>
+                    </button>
                 </div>
             </div>
         </section>
     </main>
     <footer>
         <div class="container-footer">
-        <span class="">ohmyfood</span>
-        <ul class="">
-            <li class="">
-                <a class=""><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-            </li>
-            <li class="">
-                <a class=""><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
-            </li>
-            <li class="">
-                <a class="">Mentions légales</a>
-            </li>
-            <li class="">
-                <a class="">Contact</a>
-            </li>
-        </ul>
+            <span class="logo-footer">ohmyfood</span>
+            <ul>
+                <li class="list-footer">
+                    <a href="#" class="link-footer"><i class="fas fa-utensils icon-footer"></i>Proposer un restaurant</a>
+                </li>
+                <li class="list-footer">
+                    <a href="#" class="link-footer"><i class="fas fa-hands-helping icon-footer"></i>Devenir partenaire</a>
+                </li>
+                <li class="list-footer">
+                    <a href="#" class="link-footer">Mentions légales</a>
+                </li>
+                <li class="list-footer">
+                    <a href="mailto:contact@ohmyfood.com" class="link-footer">Contact</a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>
-</html>
+</html> 
