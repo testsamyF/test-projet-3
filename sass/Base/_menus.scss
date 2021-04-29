@@ -118,6 +118,8 @@
     to {
       margin-top: 0px;
       opacity: 1;
+      -webkit-animation-delay: 3s;
+      animation-delay: 1s;
     }
   }
     }
@@ -149,17 +151,26 @@
     }
     .box-info{
       flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     h4{
       line-height: 0;
       font-weight: 500; 
       font-size: 1.1em;
     }
+    .item-title{
+      color: black;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
     .paragraph-card{
       font-weight: normal;
       line-height: 0;
       font-size: 13.2px;
       color: rgba(0,0,0,0.7);
+      text-overflow: ellipsis;
     }
     .price{
       display: flex;
