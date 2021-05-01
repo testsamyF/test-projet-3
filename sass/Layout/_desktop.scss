@@ -1,0 +1,27 @@
+@media screen  and  (min-width: 1250px)
+{
+    ol{
+        flex-direction: row;
+    }
+    /*block-Restaurants*/
+    .block-restaurants{
+        border-radius: 20px;
+    }
+    .container-restaurants{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container-restaurants .card{
+        max-width: 45%;
+    }
+    /*menu-page*/
+    .menu-page .background-img{
+        height:460px;
+    }
+    .menu-page .box-card{ 
+        margin: 0 10px;
+    }
+    .menu-page .child-block{
+        display: flex;
+    }
+}

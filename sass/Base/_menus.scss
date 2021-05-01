@@ -1,0 +1,240 @@
+/*menu-ohmyfood*/
+.menu-page{
+
+    .logo{
+      float: left;
+      padding-left: 30px;
+      padding-top: 10px;  
+    }
+      .icon-logo{
+        color: black;
+        font-weight: bolder;
+        font-size: 1.3em;    
+    }
+    .background-img{
+      background-image: url("/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 245px;
+      width: 100%;
+      max-width: 100%;
+      margin-top: -1em;
+      
+      &.background-img-2{
+        background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+      }
+      &.background-img-3{
+        background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+      }
+      &.background-img-4{
+        background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+      }
+    }
+    /*menus*/
+    .menus{
+      max-width: 1400px;
+      width: 100%;
+      margin: auto;
+    }
+    .parent-background{
+      background-color: $background-grey;
+      margin-top: -45px;
+      padding: 4px 0 0 20px;
+      border-top-left-radius: 45px;
+      border-top-right-radius: 45px; 
+    }
+    .title-parent{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .title-menu{
+      font-family: 'Shrikhand';
+      font-weight: 100;
+      font-size: 1.6em;
+    }
+    .box-heart{
+      position: relative;
+      padding-right: 30px;
+      cursor: pointer;
+    }
+    .box-heart:hover{
+      .heart-full{
+       font-size: 1.5em;
+        opacity: 1;
+        left: 0px;
+        top: 0px;
+      } 
+    }
+    .heart-full{
+      font-size: 0px;
+      color: rgba(147, 27, 177, 0.8);
+      font-weight: bold;
+      transition: all 0.5s;
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      opacity: 0;
+    }
+    .heart{
+      font-size: 1.5em;
+    }
+    .child-block{
+      padding: 3px;
+    }
+    .title-card{
+      font-weight: 300;
+      font-size: medium;
+      text-transform: uppercase;
+      position: relative; 
+      margin-bottom: 25px;
+      width: 100%;
+      max-width: 370px; 
+    }
+    .title-card:after{
+      content: " ";
+      width: 11%;
+      height: 4px;
+      background-color: $tertiary-color;
+      left: 0;
+      bottom: -8px;
+      position: absolute;
+    }
+    .box-card{
+      padding-bottom: 5px;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+    }
+    .href-card-menu{
+      text-decoration: none;
+  }
+  /*Keyframes menus*/
+  @-webkit-keyframes glissement {
+    from {
+      margin-top: -50px;
+      opacity: 0;
+    }
+  
+    to {
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }
+  @keyframes glissement {
+    from {
+      margin-top: -50px;
+      opacity: 0;
+    }
+  
+    to {
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }
+    }
+  /*end-Keyframes menus*/
+    .card_menu{
+      display: flex;
+      background-color: $color-white;
+      color: $color-black;
+      box-sizing: border-box;
+      font-weight: 500;
+      max-width: 100%;
+      height: 65px;
+      padding: 0 9px;
+      margin: 0 10px 15px -8px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0px 1px 10px 1px RGB(5 0 0/12%);
+      -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: glissement;
+            animation-name: glissement;
+    }
+    .card_menu:hover{
+      .box-check{
+        transform: translateX(0);
+        .check-wrap{
+          transform: rotate(360deg);
+        }    
+      }   
+    }
+    .box-info{
+      flex-grow: 1;
+      overflow: hidden;
+    }
+    .ellipsis{
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      
+    }
+    h4{
+      font-weight: 500; 
+      font-size: 1.1em;
+      margin-bottom: 3px;
+      margin-top: 13px;
+    }
+    .item-title{
+      color: black;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .paragraph-card{
+      font-weight: normal;
+      font-size: 13.2px;
+      color: rgba(0,0,0,0.7);
+      margin-top: 5px;
+    }
+    .price{
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2.2em;
+      margin-right: 2em;
+    }
+    .box-check{
+      transform: translateX(70px); 
+      transition: transform 1s;
+      display: flex;
+      
+      .check{
+        background-color: $tertiary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 4em;
+        margin-right: -0.6em;
+        height: 100%;
+        transition: 0.5s ease-in-out;
+      } 
+      .check-wrap{
+        background-color: white;
+        color: $tertiary-color;
+        height: 25px;
+        width: 25px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(0deg);
+        transition: transform 1s;
+        }
+    }
+    /*end-menus*/
+    .button{
+      display: flex;
+      justify-content: center;
+
+   }
+   .href-button{
+     text-decoration: none;
+     color: $color-white;
+   }
+    button{
+      @include button;
+      width: 57%;
+      margin: 30px 0 80px 0;
+      font-weight: 500;
+    }

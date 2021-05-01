@@ -1,0 +1,310 @@
+body, html{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+/*animation-loader*/
+.box-loader{
+  visibility: hidden;                       
+  -webkit-animation: loader 2s;      
+          animation: loader 2s; 
+  text-align: center; 
+  background-color: rgba(#fff, 0.9);
+  position: fixed;
+  z-index: 1000; 
+  width: 100%;
+  height: 100%;
+  margin-top: -1.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+}
+@-webkit-keyframes loader{
+  0%{  
+    visibility:visible;
+   }
+  100%{ 
+    visibility: hidden;
+   }
+}
+@keyframes loader{
+  0%{  
+    visibility:visible;
+   }
+  100%{ 
+    visibility: hidden;
+   }
+}
+.anim-loader{
+  border-radius: 50px;
+  border: 7px solid rgba(196, 245, 229, 0.973);
+}
+.anim-loader::after{
+  content: "";
+  position: absolute;
+  top: -7px; 
+  left: -7px;
+  bottom: -7px;
+  right: -7px;
+  border-radius: 50px;
+  border: 7px solid transparent;
+  border-top-color: black;        
+  -webkit-animation: spin 1s linear infinite;  
+          animation: spin 1s linear infinite;
+}
+@-webkit-keyframes spin{
+  0%{ transform: rotate(0deg); }
+  100%{ transform: rotate(360deg); }
+}
+@keyframes spin{
+  0%{  transform: rotate(0deg); }
+  100%{ transform: rotate(360deg); }
+}
+.loader{
+  width: 50px;
+  height: 50px; 
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 40px; 
+  color:black;
+  display: inline-block;
+  margin-left: 1.8em;
+}
+/*end-animation-loader*/
+.header{
+  background-color: $color-white;
+   
+      h1{
+        @include logo; 
+      }
+  }
+.map{
+  box-shadow: 0px -3px 5px 1px RGB(0 0 0 / 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  height: 3em;
+  font-size: large;
+  position: relative;
+  bottom: 1em;
+}
+.city-map{  
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.box-parent-title-button{
+  background-color: #fafafa; 
+  padding: 2em;
+  margin-top: -2em;
+  text-align: center;
+
+  .title{
+    font-weight: 700;
+    font-size: 27px;
+  }
+  p{
+    font-size: 1.1em;
+    margin-top: -5px;
+   }
+  button{
+    @include button;
+  }
+}
+/*block Operations*/
+.block-operation{
+  max-width: 1400px;
+  margin: auto;
+}
+.title-operation{
+  margin: 0.8em;
+  margin-top: 2em;
+}
+.container-operation{
+  padding: 17px;
+}
+ol{
+  counter-reset: operating;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+}
+.card-operation{
+  background-color: $background-grey;
+  box-shadow: 4px 1px 10px 0px RGB(5 0 0/18%);
+  padding: 25px;
+  padding-right: inherit;
+  border-radius: 20px;
+  width: 100%;
+  height: 70px;
+  counter-increment: operating;
+  list-style-type: none;
+  max-width: 400px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  &.card-operation:hover{
+    background-color: #f9e5fc;
+    
+    .fas{
+      color: $primary-color;
+    }
+    
+  }
+  &.card-operation:before{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: counter(operating);
+    background: $primary-color;
+    color: $color-white;
+    padding: 6px;
+    width: 4%;
+    height: 12px;
+    margin: 0px 15px -22px -35px;
+    font-size: 11px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .icon-operating{
+    color: #7e7e7e;
+    padding-left: 13px;
+    font-size: 18px;
+  }
+  .operating-text{
+    padding: 15px;
+  }
+}
+/*block Operations*/
+/*block Restaurants*/
+.block-restaurants
+{
+  background-color: $background-grey;
+  padding-bottom: 1px;
+  max-width: 1400px;
+  margin: auto;
+}
+.title-restaurants{
+  margin: 0.8em;
+  margin-top: 1.5em;
+  padding-top: 50px;
+}
+.container-restaurants{
+  color: black;
+  
+.card{
+  background-color: $color-white;
+  padding-bottom: 30px;
+  width: 93%;
+  box-sizing: border-box;
+  border-radius: 20px; 
+  margin: 40px auto;
+  }
+.text-href-card{
+  text-decoration: none;
+}
+  .background-img{
+    background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    &.background-img-2{
+      background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    }
+    &.background-img-3{
+      background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    }
+    &.background-img-4{
+      background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    }
+  }
+  .nouveau{
+    background-color: $tertiary-color;
+    color: #1b6150;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    padding: 9px 10px 9px 10px;
+    border-radius: 2px;
+    font-weight: 400;
+  }
+  .box-texts{
+    line-height: 10px;
+    
+    h3{
+      padding-left: 20px;
+      color: black;
+      font-weight: 600;
+      line-height: 10px;
+    }
+    .text-card{
+      padding-left: 20px;
+      color: black;
+      font-weight: 300;
+      font-size: 18px; 
+    }
+    /*heart*/
+    .box-heart{
+      padding-right: 30px;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: -2em;
+      
+    }
+    .box-heart:hover{
+      .heart-full{
+       font-size: 1.5em;
+        opacity: 1;
+        left:15px;
+        top: 0;
+        display: flex;
+        margin-left: -1em;
+      } 
+    }
+    .heart-full{
+      font-size: 0;
+      color: rgba(147, 27, 177, 0.8);
+      font-weight: bold;
+      transition: all 0.5s;
+      position: -webkit-sticky;
+      position: sticky;
+      opacity: 0;
+    }
+    .heart{
+      font-size: 1.5em;
+      color: $color-black;
+    }
+    /*end-heart*/
+  }
+}
+/* end block-restaurants*/
+/* footer*/
+.container-footer{
+  background-color: #353535;
+  padding: 20px 0;
+  
+  .logo-footer{
+    font-family: 'Shrikhand';
+    color: $color-white;
+    margin: 40px;
+  }
+  .list-footer{
+    list-style-type: none;
+    line-height: 1.5em;
+  }
+  .link-footer{
+    text-decoration: none;
+    color: $color-white;
+    font-style: normal;
+  }
+  .icon-footer{
+    width: 1em;
+    padding-right: 15px;
+  }
+} 

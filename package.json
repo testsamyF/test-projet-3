@@ -1,0 +1,21 @@
+{
+  "name": "fichelsamy_03_10032021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss ./sass/main.css --use autoprefixer -d ./sass/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samy-Fichel/FichelSamy_03_10032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/Samy-Fichel/FichelSamy_03_10032021/issues"
+  },
+  "homepage": "https://github.com/Samy-Fichel/FichelSamy_03_10032021#readme"
+}
