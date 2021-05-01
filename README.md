@@ -1,7 +1,6 @@
 # FichelSamy_03_10032021
 Projet 3
-# FichelSamy_03_10032021
-Projet 3
+
 
 ![maquette du site web Ohmyfood](https://user.oc-static.com/upload/2020/08/24/15982605908418_Maquettes%20Ohmyfood.jpg)
 
