@@ -7,6 +7,7 @@ body, html {
           box-sizing: border-box;
 }
 
+/*animation-loader*/
 .box-loader {
   visibility: hidden;
   -webkit-animation: loader 2s;
@@ -100,6 +101,7 @@ body, html {
   margin-left: 1.8em;
 }
 
+/*end-animation-loader*/
 .header {
   background-color: #ffff;
 }
@@ -167,6 +169,12 @@ body, html {
           box-shadow: 2px 2px 4px grey;
   cursor: pointer;
   max-width: 250px;
+}
+
+.box-parent-title-button button.btn:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0.2em 0.2em 10px RGB(0 0 0/50%);
+          box-shadow: 0.2em 0.2em 10px RGB(0 0 0/50%);
 }
 
 /*block Operations*/
@@ -321,6 +329,8 @@ ol {
 
 .container-restaurants .box-texts {
   line-height: 10px;
+  /*heart*/
+  /*end-heart*/
 }
 
 .container-restaurants .box-texts h3 {
@@ -409,6 +419,11 @@ ol {
 }
 
 /*menu-ohmyfood*/
+.menu-page {
+  /*menus*/
+  /*Keyframes menus*/
+}
+
 .menu-page .logo {
   float: left;
   padding-left: 30px;
@@ -561,6 +576,7 @@ ol {
   }
 }
 
+/*end-Keyframes menus*/
 .card_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,7 +641,7 @@ h4 {
   font-weight: normal;
   font-size: 13.2px;
   color: rgba(0, 0, 0, 0.7);
-  margin-top: 0;
+  margin-top: 5px;
 }
 
 .price {
@@ -667,7 +683,6 @@ h4 {
   height: 100%;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  /*opacity: 0;*/
 }
 
 .box-check .check-wrap {
@@ -693,6 +708,7 @@ h4 {
   transition: transform 1s, -webkit-transform 1s;
 }
 
+/*end-menus*/
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,6 +744,12 @@ button {
   font-weight: 500;
 }
 
+button.btn:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0.2em 0.2em 10px RGB(0 0 0/50%);
+          box-shadow: 0.2em 0.2em 10px RGB(0 0 0/50%);
+}
+
 @media screen and (min-width: 1250px) {
   ol {
     -webkit-box-orient: horizontal;
@@ -735,7 +757,7 @@ button {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  /*block Restaurants*/
+  /*block-Restaurants*/
   .block-restaurants {
     border-radius: 20px;
   }
@@ -761,9 +783,5 @@ button {
     display: -ms-flexbox;
     display: flex;
   }
-}
-
-@media screen and (min-width: 900px) {
-  /*menu-page*/
 }
 /*# sourceMappingURL=main.css.map */

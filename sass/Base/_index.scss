@@ -3,6 +3,7 @@ body, html{
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
+/*animation-loader*/
 .box-loader{
   visibility: hidden;                       
   -webkit-animation: loader 2s;      
@@ -70,8 +71,9 @@ body, html{
   display: inline-block;
   margin-left: 1.8em;
 }
+/*end-animation-loader*/
 .header{
-    background-color: $color-white;
+  background-color: $color-white;
    
       h1{
         @include logo; 
@@ -108,7 +110,6 @@ body, html{
    }
   button{
     @include button;
-    
   }
 }
 /*block Operations*/
@@ -130,7 +131,7 @@ ol{
   flex-direction: column;
 }
 .card-operation{
-  background-color: #f6f6f6;
+  background-color: $background-grey;
   box-shadow: 4px 1px 10px 0px RGB(5 0 0/18%);
   padding: 25px;
   padding-right: inherit;
@@ -142,8 +143,6 @@ ol{
   max-width: 400px;
   margin: 20px auto;
   box-sizing: border-box;
-
-
   &.card-operation:hover{
     background-color: #f9e5fc;
     
@@ -180,7 +179,7 @@ ol{
 /*block Restaurants*/
 .block-restaurants
 {
-  background-color: #f6f6f6;
+  background-color: $background-grey;
   padding-bottom: 1px;
   max-width: 1400px;
   margin: auto;
@@ -193,18 +192,17 @@ ol{
 .container-restaurants{
   color: black;
   
-  .card{
-    background-color: $color-white;
-    padding-bottom: 30px;
-    width: 93%;
-    box-sizing: border-box;
-    border-radius: 20px; 
-    margin: 40px auto;
+.card{
+  background-color: $color-white;
+  padding-bottom: 30px;
+  width: 93%;
+  box-sizing: border-box;
+  border-radius: 20px; 
+  margin: 40px auto;
   }
-  .text-href-card{
-    text-decoration: none;
-  }
-
+.text-href-card{
+  text-decoration: none;
+}
   .background-img{
     background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"); 
     background-size: cover;
@@ -249,6 +247,7 @@ ol{
       font-weight: 300;
       font-size: 18px; 
     }
+    /*heart*/
     .box-heart{
       padding-right: 30px;
       cursor: pointer;
@@ -281,6 +280,7 @@ ol{
       font-size: 1.5em;
       color: $color-black;
     }
+    /*end-heart*/
   }
 }
 /* end block-restaurants*/

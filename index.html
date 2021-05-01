@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="sass/main.css" media="screen" />
 </head>
 <body>
-    <section class="box-loader">  
+    <div class="box-loader">  
         <div class="loader anim-loader"> 
-            <div class="loader"></div>
+            <div class="loader">
+            </div>
         </div> 
-    </section>
+    </div>
     <header>
         <div class="header">
             <div class="logo">
@@ -34,9 +35,10 @@
             <div>
                 <h2 class="title">Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <button>Explorer nos restaurants</button>
+                <button class="btn">Explorer nos restaurants</button>
             </div>
         </section>
+        <!--Operation-->
         <section class="block-operation">
             <h2 class="title-operation">Fonctionnement</h2>
             <div class="container-operation">
@@ -56,6 +58,8 @@
                 </ol>
             </div>
         </section>
+        <!--end-Operation-->
+        <!--Restaurants-->
         <section class="block-restaurants">
             <h2 class="title-restaurants">Restaurants</h2>
             <div class="container-restaurants">
@@ -121,16 +125,23 @@
                 </div>
             </div>
         </section>
+        <!--Restaurants-->
     </main>
     <footer>
         <div class="container-footer">
             <span class="logo-footer">ohmyfood</span>
             <ul>
                 <li class="list-footer">
-                    <a href="#" class="link-footer"><i class="fas fa-utensils icon-footer"></i>Proposer un restaurant</a>
+                    <a href="#" class="link-footer">
+                        <i class="fas fa-utensils icon-footer"></i>
+                        Proposer un restaurant
+                    </a>
                 </li>
                 <li class="list-footer">
-                    <a href="#" class="link-footer"><i class="fas fa-hands-helping icon-footer"></i>Devenir partenaire</a>
+                    <a href="#" class="link-footer">
+                        <i class="fas fa-hands-helping icon-footer"></i>
+                        Devenir partenaire
+                    </a>
                 </li>
                 <li class="list-footer">
                     <a href="#" class="link-footer">Mentions légales</a>

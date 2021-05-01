@@ -18,7 +18,11 @@
     box-shadow: 2px 2px 4px grey;
     cursor: pointer;
     max-width:250px;
-}  
+    &.btn:hover{
+        background-color: #fff;
+        box-shadow: 0.20em 0.20em 10px RGB(0 0 0 / 50%);
+    }
+} 
 @mixin heart{
     &.fa-heart::before {
     transition: all color 1s ease; 
